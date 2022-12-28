@@ -2,42 +2,53 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+:root {
+    --font1: 'Passion One', cursive;
+    --font2: 'Sriracha', cursive;
+    --font3: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
 
-:root {
-    --font1: Verdana, Geneva, Tahoma, sans-serif;
-    --font2: 'Passion One', cursive;
-    --font3: 'Sriracha', cursive;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font2);
 }
 
 header {
     background-color: black;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-family: var(--font1);
+    margin: 0px 0px 0px 0px;
+    padding: 40px 25px 45px 30px;
 }
 
 header > h1 {
-    font-family: var(--font2);
+    color: white;
+    text-align: center; 
+    font-size:9.5vw;
+    font-weight: bolder;
+    font-family: var(--font1);
     font-variant: small-caps;
-    font-size: 10vw;
+    margin: 0px;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    font-family: var(--font3);
 }
 
 header a {
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
 }
+
+/*
 
 main {
     min-width: 200px;
@@ -45,28 +56,29 @@ main {
 }
 
 div {
-    line-height: 5em;
+    line-height: 8em;
 }
 
 div > p {
-    padding: 15px 20px 40px 10px;
-    font-family: var(--font3);
-    font-size: 45px;
+    font-family: var(--font2);
+    font-size: 7vh;
 }
 div.normal{
-    margin: 50px 0px 50px 0px;
-    padding: 30px 1px 45px 20px;
+    margin: 5vh 0px 5vh 0px;
+    padding: 4vh 1px 45px 2vh;
     background-color: white;
     color: black;
 }
 
 div.normal > p {
     display: inline-block;
+    margin: 5vh 53vw 3vh 0px;
+    padding: 1px 1px 1px 10px;
 }
 
 div.wallpaper {
-    margin: 50px 0px 50px 0px;
-    padding: 30px 1px 45px 20px;
+    margin: 5vh 0px 5vh 0px;
+    padding: 5vh 0px 5vw 2vh;
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,17 +86,18 @@ div.wallpaper {
 }
 
 div.wallpaper > p {
-    margin: 50px 52vw 25px 0px;
+    margin: 5vh 53vw 3vh 0px;
+    padding: 1px 1px 1px 10px;
     background-color: rgba(0, 0, 0, 0.521);
     color: white;
 }
 
 div#img01 {
-    background-image: url(imagens/baki.jpg);
+    background-image: url(imagens/background001.jpg);
 }
 
 div#img02 {
-    background-image: url(imagens/jojo.jpg);
+    background-image: url(imagens/background002.jpg);
 }
 
 footer {
@@ -92,6 +105,59 @@ footer {
     padding: 1px 1px 1px 1px;
     background-color: black;
     color: white;
-    font-family: var(--font1);
+    font-family: var(--font3);
     text-align: center;
+}
+
+*/
+
+div {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font2);
+    font-size: 3.5vw;
+}
+
+div > p {
+    padding-bottom: 2em;
+}
+
+div.normal {
+    background-color: white;
+    color: black;
+}
+
+div.wallpaper {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.wallpaper > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+div#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+div#img02 {
+    background-image: url('imagens/background002.jpg');
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
