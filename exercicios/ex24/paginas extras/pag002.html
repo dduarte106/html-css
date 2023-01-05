@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 300px
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .filmes {
+            width: 700px;
+        }
+
+        .filmes td {
+            text-align: left;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="filmes">
+        <thead>
+            <th>Grupo</th>
+            <th>Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>OldBoys</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Duarte</td>
+                <td>Spider-Man 2</td>
+                <td>Perfect Blue</td>
+                <td>Scooby-Doo</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
