@@ -31,8 +31,10 @@
 }
 
 .slider label {
-    background-color: #000;
-    bottom: 10px;
+    background-color: rgb(255, 0, 234);
+    border-radius: 50px;
+    bottom: -20px;
+    margin-left: 230px;
     cursor: pointer;
     display: block;
     height: 10px;
