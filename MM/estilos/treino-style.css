@@ -14,13 +14,13 @@ iframe {
     width: 340px;
 }
 
-ul {
+div.container > ul {
     list-style: none;
     text-align: left;
     text-indent: 20px;
 }
 
-ul > li > a{
+div.container > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: rgb(212, 7, 7);
 }

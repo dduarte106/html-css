@@ -21,11 +21,11 @@ html {
   }
 
 header {
-    background-color: aqua;
+    background-color: rgb(247, 247, 247);
 }
 
 header h1 {
-    padding: 30px;
+    padding: 70px;
     text-align: center;
 }
 
@@ -44,10 +44,12 @@ span#burguer:hover {
 
 menu {
     display: none;
+    background-color: purple;
 }
 
 menu > ul {
     list-style-type: none;
+    padding: 10px;
 }
 
 menu > ul > li > a {
@@ -55,16 +57,22 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(87, 87, 87);
     color: white;
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(115, 33, 136);
+    border-radius: 20px 1px 20px 1px;
     border-top: 2px solid grey;
 }
 
 main {
     display: block;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid blueviolet;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     width: 80vw;
     height: 100%;
 }
