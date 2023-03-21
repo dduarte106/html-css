@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+iframe {
+    min-width: 400px;
+    max-width: 700px;
+    height: 90vh;
+}
+
+.container {
+    text-align: center;
+}
+.container > iframe {
+    height: 800px;
+    width: 540px;}
+
+div.container > ul {
+    list-style: none;
+    text-align: left;
+    text-indent: 20px;
+}
+
+div.container > ul > li > a{
+    text-decoration: none;
+    color: rgb(212, 7, 7);
+}
