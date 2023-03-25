@@ -2,7 +2,8 @@
 
 
 iframe {
-    width: 400px;
+    min-width: 400px;
+    max-width: 700px;
     height: 90vh;
 }
 
@@ -11,8 +12,7 @@ iframe {
 }
 .container > iframe {
     height: 800px;
-    width: 340px;
-}
+    width: 540px;}
 
 div.container > ul {
     list-style: none;

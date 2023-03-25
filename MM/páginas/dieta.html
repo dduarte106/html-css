@@ -10,6 +10,9 @@
     <style>
         table {
             border-collapse: collapse;
+            margin: 0 auto;
+            text-indent: 10px;
+            width: 100%;
         }
 
         td, th {
@@ -19,6 +22,11 @@
         td:nth-child(even) {
             text-align: center;
         }
+
+        th {
+            background-color: rgb(179, 179, 179);
+        }
+        
     </style>
 </head>
 <body onresize="mudouTamanho()">
@@ -28,9 +36,9 @@
         <menu id="itens">
             <ul>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="../páginas/treinos.html">Treinos</a></li>
-                <li><a href="#">Alimentação</a></li>
-                <li><a href="#">Progressão</a></li>
+                <li><a href="treinos.html">Treinos</a></li>
+                <li><a href="dieta.html">Alimentação</a></li>
+                <li><a href="progressao.html">Progressão</a></li>
                 <li><a href="#"></a></li>
             </ul>
         </menu>
@@ -121,7 +129,7 @@
                 </tr>
                 <tr>
                     <td>Suco de uva integral (200ml)</td>
-                    <td>123,20</td>
+                    <td>123,20kcal</td>
                 </tr>
                 <tr>
                     <td>Pão de sal (Unidade: 1)</td>
@@ -147,7 +155,7 @@
                     <td>586,22kcal</td>
                 </tr>
                 <tr>
-                    <th>22:00 - Ceia</th>
+                    <th colspan="2">22:00 - Ceia</th>
                 </tr>
                 <tr>
                     <td>Frango desfiado (120g)</td>

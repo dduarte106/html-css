@@ -30,7 +30,7 @@ header h1 {
 }
 
 span#burguer {
-    background-color: rgb(48, 48, 48);
+    background-color: #370f53;
     color: white;
     display: block;
     text-align: center;
@@ -44,7 +44,7 @@ span#burguer:hover {
 
 menu {
     display: none;
-    background-color: purple;
+    background-color: #5a2d82;
 }
 
 menu > ul {
@@ -61,7 +61,7 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: rgb(115, 33, 136);
+    background-color: #370f53;
     border-radius: 20px 1px 20px 1px;
     border-top: 2px solid grey;
 }
