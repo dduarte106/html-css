@@ -2,19 +2,20 @@
 
 
 iframe {
-    min-width: 400px;
-    max-width: 700px;
-    height: 90vh;
+    width: 720px;
+    height: 70vh;
 }
 
-.container {
-    text-align: center;
-}
 .container > iframe {
     height: 800px;
-    width: 540px;}
+    width: 970px;
+}
 
-div.container > ul {
+div.iframetela {
+    text-align: center;
+}
+
+div.container ul > li {
     list-style: none;
     text-align: left;
     text-indent: 20px;
@@ -22,5 +23,17 @@ div.container > ul {
 
 div.container > ul > li > a{
     text-decoration: none;
-    color: rgb(212, 7, 7);
+}
+
+details a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.container2 {
+    text-indent: 50px;
+}
+
+details.container2 a {
+    margin-left: 60px;
 }
