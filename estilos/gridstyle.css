@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+
+div.gridlayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    width: 97%;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.grid-item-1 {
+    grid-row: span 2;
+}
+
+.grid-item {
+    display: grid;
+    background-image: url(../imagens/grid-treino1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-width: 400px;
+    min-height: 265px;
+
+}
+
+.grid-item a {
+    color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 191%;
+}
+
+
+.grid-item p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
+
+.img-item2 {
+    background-image: url(../imagens/grid-dieta2.jpg);
+}
+
+.img-item3 {
+    background-image: url(../imagens/grid-progressao.jpg);
+}
