@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-
-
 div.gridlayout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
-    width: 97%;
+    max-width: 97%;
+    min-width: 400px;
     height: 100%;
     padding-left: 15px;
 }
@@ -18,7 +17,7 @@ div.gridlayout {
 
 .grid-item {
     display: grid;
-    background-image: url(../imagens/grid-treino1.jpg);
+    background-image: url(../imagens/manoel-gomes-caneta-azul.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -44,9 +43,67 @@ div.gridlayout {
 }
 
 .img-item2 {
-    background-image: url(../imagens/grid-dieta2.jpg);
+    background-image: url(../imagens/manoel-gomes-caneta-azul.jpg);
 }
 
 .img-item3 {
-    background-image: url(../imagens/grid-progressao.jpg);
+    background-image: url(../imagens/manoel-gomes-caneta-azul.jpg);
+}
+
+@media screen and (max-width: 990px) {
+    
+    div.gridlayout {
+        display: grid;
+        grid-template-columns: 365px 100px;
+        grid-template-rows: 201px;
+        gap: 10px;
+        max-width: 220px;
+        margin-right: 20px;
+    }
+
+    .grid-item {
+        display: grid;
+        background-image: url(../imagens/manoel-gomes-caneta-azul.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-width: 355px;
+        min-height: 200px;
+    
+    }
+
+    .grid-item-1 {
+        grid-row: span 2;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    div.gridlayout {
+        display: grid;
+        grid-template-columns: 75vw;
+        grid-template-rows: 200px;
+        gap: 10px;
+        max-width: 220px;
+        margin-right: 20px;
+    }
+
+    .grid-item {
+        display: grid;
+        background-image: url(../imagens/manoel-gomes-caneta-azul.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-width: 355px;
+        min-height: 200px;
+    
+    }
+
+    .grid-item-1 {
+        grid-row: span 1;
+    }
+    
+
 }
