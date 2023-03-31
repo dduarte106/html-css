@@ -45,6 +45,7 @@ span#burguer:hover {
 menu {
     display: none;
     background-color: #5a2d82;
+    padding: 10px;
 }
 
 menu > ul {
@@ -71,7 +72,7 @@ main {
     background-color: rgb(255, 255, 255);
     border: 3px solid blueviolet;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 95px;
     margin-bottom: 70px;
     width: 80vw;
     height: 100%;
@@ -113,4 +114,16 @@ main p {
         width: 992px;
         height: 100%;
     }
+}
+
+
+div.spotify {
+    margin: 0px;
+    width: 390px;
+}
+
+iframe#playlist {
+    position: fixed;
+    top: 16pc;
+    left: 0;
 }
