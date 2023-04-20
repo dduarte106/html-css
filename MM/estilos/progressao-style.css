@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        text-indent: 10px;
+        width: 100%;
+    }
+
+    td, th {
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    td:nth-child(even) {
+        text-align: center;
+    }
+
+    th {
+        background-color: rgb(179, 179, 179);
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+
+    .peito {
+        background-color: #ffc0cb;
+    }
+
+    .costas {
+        background-color: #9b6a0e;
+    }
+
+    .perna {
+        background-color: #c027c0;
+    }
+
+    .ombro {
+        background-color: #d98658;
+    }
+
+    .braço {
+        background-color: #3a0909;
+    }
+
+    div.cores {
+        display: contents;
+    }
+
+    .bola {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #000000;
+        background-color: #ffc0cb;
+    }
+
+    .bola1 {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #000000;
+        background-color: #9b6a0e;
+    }
+
+    .bola2 {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #000000;
+        background-color: #c027c0;
+    }
+
+    .bola3 {
+        border-radius: 50%;
+        display: inline-block;
+                height: 10px;
+        width: 10px;
+        border: 1px solid #000000;
+        background-color: #d98658;
+    }
+
+    .bola4 {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #000000;
+        background-color: #3a0909;
+    }
+
+    div.cores {
+        display: flex;
+    }
