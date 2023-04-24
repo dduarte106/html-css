@@ -31,6 +31,11 @@ header h1 {
     background-position: center top;
 }
 
+header h1 a {
+    color: rgba(0, 255, 255, 0);
+    padding: 8.5pc 40pc;
+}
+
 span#burguer {
     background-color: #370f53;
     color: white;
@@ -40,14 +45,15 @@ span#burguer {
 }
 
 span#burguer:hover {
-    background-color: rgba(70, 20, 105, 0.863);
+    background-color: #000000de;
     color: rgb(255, 255, 255);
 }
 
 menu {
-    display: none;
-    background-color: #5a2d82;
+    display: grid;
+    background-color: #000000de;
     padding: 10px;
+    text-align: center;
 }
 
 menu > ul {
@@ -56,23 +62,24 @@ menu > ul {
 }
 
 menu > ul > li > a {
-    display: block;
-    padding: 10px;
+    display: grid;
+    padding: 20px;
+    margin-left: 15px;
     text-decoration: none;
     text-align: center;
     color: white;
+    font-size: 1.2em;
 }
 
 menu > ul > li > a:hover {
-    background-color: #370f53;
+    background-color: #000000de;
     border-radius: 20px 1px 20px 1px;
-    border-top: 2px solid grey;
 }
 
 main {
     display: block;
     background-color: rgb(255, 255, 255);
-    border: 3px solid blueviolet;
+    border: 3px solid rgb(65, 65, 65);
     margin: 0 auto;
     margin-top: 95px;
     margin-bottom: 70px;
