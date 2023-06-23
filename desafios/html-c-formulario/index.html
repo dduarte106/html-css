@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <section>
+            <h1 class="centralTT">Login</h1>
+            <br>
+                <p class="centralTxT">SEJA BEM VIND-E NOVAMENTE. FAÇA O LOGIN PARA ACESSAR SUA CONTA E PODER FAZER AS CONFIGURAÇÕES DO SEU AMBIENTE.</p>
+                <br>
+                <p class="centralTxT" style="color: blue;">evento online e gratuito dos dias xx/xx até xx/xx</p>
+                <br>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo1">
+                        <span class="material-symbols-outlined"></span>
+                        <input type="text" name="user" id="iuser" placeholder=" SEU USUÁRIO" autocomplete="on" required maxlength="30">
+                        <label for="iuser"></label>
+                    </div>
+                    <br>
+                    <div class="campo2">
+                        <span class="material-symbols-outlined"></span>
+                        <input type="password" name="senha" id="isenha" placeholder=" SUA SENHA" required minlength="8" maxlength="20">
+                        <label for="isenha"></label>
+                    </div>
+                    <br>
+                <input class="botao" type="submit" value="Enviar">
+                <!--
+                <a href="#" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>  
+                -->
+                    <div id="mostrador"></div>
+                    <button>1 minuto</button>
+
+                    <script>
+                        var button = document.querySelector('button');
+                        var mostrador = document.querySelector('#mostrador');
+
+                        button.addEventListener('click', function() {
+                            new Timer(1, mostrador, function() {
+                                alert('O tempo acabou!');
+                            }).start();
+                        });
+
+                        function Timer(mins, target, cb) {
+                            this.counter = mins * 60;
+                            this.target = target;
+                            this.callback = cb;
+                        }
+                        Timer.prototype.pad = function(s) {
+                            return (s < 10) ? '0' + s : s;
+                        }
+                        Timer.prototype.start = function(s) {
+                            this.count();
+                        }
+                        Timer.prototype.stop = function(s) {
+                            this.count();
+                        }
+                        Timer.prototype.done = function(s) {
+                            if (this.callback) this.callback();
+                        }
+                        Timer.prototype.display = function(s) {
+                            this.target.innerHTML = this.pad(s);
+                        }
+                        Timer.prototype.count = function(s) {
+                            var self = this;
+                            self.display.call(self, self.counter);
+                            self.counter--;
+                            var clock = setInterval(function() {
+                                self.display(self.counter);
+                                self.counter--;
+                                if (self.counter < 0) {
+                                    clearInterval(clock);
+                                    self.done.call(self);
+                                }
+                            }, 1000);
+                        }
+                    </script>
+                </form>
+        </section>
+    </div>
+</body>
+</html>
