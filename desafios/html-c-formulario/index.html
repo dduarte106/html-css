@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <section>
+            <h1 class="centralTT">Login</h1>
+            <br>
+                <p class="centralTxT">SEJA BEM VIND-E NOVAMENTE. FAÇA O LOGIN PARA ACESSAR SUA CONTA E PODER FAZER AS CONFIGURAÇÕES DO SEU AMBIENTE.</p>
+                <br>
+                <p class="centralTxT" style="color: blue;">evento online e gratuito dos dias xx/xx até xx/xx</p>
+                <br>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo1">
+                        <span class="material-symbols-outlined"></span>
+                        <input type="text" name="user" id="iuser" placeholder=" INSIRIA O SEU NOME" autocomplete="on" required maxlength="30">
+                        <label for="iuser"></label>
+                    </div>
+                    <div class="campo2">
+                        <span class="material-symbols-outlined"></span>
+                        <input type="password" name="senha" id="isenha" placeholder=" INSIRA SEU E-MAIL" required minlength="8" maxlength="20">
+                        <label for="isenha"></label>
+                    </div>
+                    <br>
+                <input class="botao" type="submit" value="ENVIAR">
+                <!--
+                <a href="#" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>  
+                -->
+                <div id="timer"></div>
+
+                <script>
+                    function startTimer(duration, display) {
+
+
+                        //duração em minutos (X) = 2 H
+                        // 150 min / 60 = 2 resto 30 
+                        // 2 : 30 : 000 
+
+
+
+
+                        var timer = duration, minutes, seconds;
+
+
+                        setInterval(function () {
+                            hours = parseInt(timer / 3600, 10);
+                            
+                            if(minutes <= 59){
+                                minutes = parseInt(timer / 60, 10);
+                            } else {
+                                minutes = 0;
+                            }
+
+                            if(seconds <= 59){
+                                seconds = parseInt(timer % 60, 10);
+                            } else {
+                                seconds = 0;
+                            }
+                            
+                            hours = hours < 10 ? "0" + hours : hours;
+                            minutes = minutes < 10 ? "0" + minutes : minutes;
+                            seconds = seconds < 10 ? "0" + seconds : seconds;
+                            display.textContent = hours + ":" + minutes + ":" + seconds;
+                            if (--timer < 0) {
+                                timer = duration;
+                            }
+                        }, 1000);
+                    }
+                    window.onload = function () {
+                        var duration = 60 * 61; // Converter para segundos
+                            display = document.querySelector('#timer'); // selecionando o timer
+                        startTimer(duration, display); // iniciando o timer
+                    };
+                </script>
+                </form>
+        </section>
+    </div>
+</body>
+</html>

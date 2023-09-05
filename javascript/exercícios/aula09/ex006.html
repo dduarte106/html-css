@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Teste</title>
+    <style>
+        body {
+            background-color: rgb(69, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    
+    <script>
+        window.document.write(window.navigator.appName)
+    </script>
+
+    <h2>aaaaaaaaaaaaa</h2>
+
+    <script>
+        window.document.write(window.document.URL)
+    </script>
+
+    <h2>bbbbbbbbbbbbb</h2>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+
+        //corpo.style.background = 'black'     //mudar a cor do background
+        //p1.style.color = 'red'     //mudar a cor do 'p' definido
+
+        document.write(p1.innerHTML)
+        //window.alert(p1.innerText) //replica inteiramente um 'p' selecionado
+        //window.document.write('Está escrito assim: ' + p1.innerText)   //replicar um 'p' selecionado
+
+        var d = window.document.getElementById('msg')
+        d.innerText = 'sexoooo'
+        //window.document.getElementById('msg').innerText = 'Olá'  //Comando completo
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'red'
+    </script>
+
+    <h2>cccccccccccccc</h2>
+</body>
+</html>

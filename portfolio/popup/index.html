@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"><a href="#">Botão</a></div>
+        <div class="box box2"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+        <div class="box"><a href="#">Botão</a></div>
+      </div>
+    
+      <!-- INÍCIO DO PRIMEIRO POP UP -->
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          Conteúdo da Div Preta
+        </div>
+      </div>
+      <!-- FIM DO PRIMEIRO POP UP -->
+      
+      <!-- INÍCIO DO SEGUNDO POP UP -->
+      <div class="overlay2" id="overlay2">
+        <div class="overlay2-content">
+          Conteúdo da Segunda Div Preta
+        </div>
+      </div>
+      <!-- FIM DO SEGUNDO POP UP -->
+
+
+  <script>
+    const box1 = document.getElementById('box1');
+    const box2 = document.querySelector('.box2');
+    const overlay = document.getElementById('overlay');
+    const overlay2 = document.getElementById('overlay2');
+
+    box1.addEventListener('click', function() {
+      overlay.classList.add('active');
+    });
+
+    box2.addEventListener('click', function() {
+      overlay2.classList.add('active');
+    });
+
+    overlay.addEventListener('click', function(event) {
+      if (event.target === overlay) {
+        overlay.classList.remove('active');
+      }
+    });
+
+    overlay2.addEventListener('click', function(event) {
+      if (event.target === overlay2) {
+        overlay2.classList.remove('active');
+      }
+    });
+  </script>
+
+  <!--FIM DO SEGUNDO POP UP-->
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #backgroundOverlay{
+    background-color:transparent;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:none;
+    }
+    #popup{
+    background-color:#bf24b7;
+    border:1px solid #fd0000;
+    width:80vw;
+    height:80vh;
+    position:absolute;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-top:10vh;
+    margin-bottom:10vh;
+    z-index:500;
+    }
+    </style>
+</head>
+<body>
+    <div id="popup">SOCORROOOO QUE CODIGOOOO.<input type="button" id="theButton" value="BOTÃO"></div>
+    <div id="backgroundOverlay"></div>
+
+
+    <input type="button" id="openOverlay" value="ABRIR DIV">
+
+<script>
+  window.onload = function(){
+	var popup = document.getElementById('popup');
+    var overlay = document.getElementById('backgroundOverlay');
+    var openButton = document.getElementById('openOverlay');
+    document.onclick = function(e){
+        if(e.target.id == 'backgroundOverlay'){
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+        if(e.target === openButton){
+         	popup.style.display = 'block';
+            overlay.style.display = 'block';
+        }
+    };
+};
+</script>
+</body>
+</html>

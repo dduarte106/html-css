@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinações - Boxe</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/tabela-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+    main ul {
+        list-style-position: inside;
+        padding-top: 10px;
+        padding-left: 35px;   
+
+    }
+
+    main li {
+        margin-bottom: 10px;
+    }
+
+    ul li:hover {
+        text-decoration: underline;
+    }
+
+    .tooltip {
+        position: relative;
+        display: table;
+        cursor: pointer;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 150px;
+        background-color: #000;
+        color: #e41818;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .tooltip .tooltiptext img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    </style>
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1><a href="index.html">AAAAAAAAAAAAA</a></h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="páginas/treinos.html">Treinos</a></li>
+                <li><a href="páginas/dieta.html">Alimentação</a></li>
+                <li><a href="páginas/progressao.html">Progressão</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <details open>
+            <summary>Golpes e Variações</summary>
+                <ul>
+                    <li class="tooltip">
+                        <span>
+                        01 - Jab
+                        <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-jab.png" alt="Imagem do Lutador 1">
+                            <p>Informações sobre o Lutador 1.</p>
+                          </span>
+                        </span>
+                    </li>
+                    <li class="tooltip">
+                        <span>
+                        02 - Direto
+                        <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-direto.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+
+                    <li class="tooltip">
+                        <span>
+                        03 - Cruzado Esq
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-cruzado.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        04 - Cruzado Dir
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-cruzado.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        05 - Gancho Esq
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-gancho.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        06 - Gancho Dir
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-gancho.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        07 - Upper Esq
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-upper.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        08 - Upper Dir
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-upper.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        09 - Swing Esq
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        10 - Swing Dir
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        11 - Overhand Esq
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        12 - Overhand Dir
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        13 - Hook Esq
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+                     
+                    <li class="tooltip">
+                        <span>
+                        14 - Hook Dir
+                          <span class="tooltiptext">
+                            <img src="../imagens/golpes/golpe-.png" alt="Imagem do Lutador 2">
+                            <p>Informações sobre o Lutador 2.</p>
+                          </span>
+                        </span>
+                    </li>
+
+                    <li style="border: 1px solid black; padding: 1px; position: relative; right: 15px;">OBS: Swing e Hook possuem movimentação diferente. Nesses golpes o corpo vai pra um lado e o corpo para o outro</li>
+                </ul>
+                <hr>
+        </details>
+        <details>
+            <summary>Combinações - Simples</summary>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <hr>
+        </details>
+
+        <details>
+            <summary>Combinações - Avançadas</summary>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <hr>
+        </details>
+    </main>
+</body>
+</html>

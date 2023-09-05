@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/tabela-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onresize="mudouTamanho()">
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                intes.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+    <header>
+        <h1><a href="../index.html">AAAAAAAAAAAAA</a></h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="treinos.html">Treinos</a></li>
+                <li><a href="dieta.html">Alimentação</a></li>
+                <li><a href="progressao.html">Progressão</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h1>BBBBBBBBBBB</h1>
+
+
+        <div class="container">
+            <ul>
+                <li>
+                    <details>
+                        <summary>Cardio</summary>
+                            <ul>
+                                <li><a href="cardio/alaijr.html" target="caixa">Alai Jr</a></li>
+                                <li><a href="cardio/baki.html" target="caixa">Baki Hanma</a></li>
+                                <li><a href="cardio/katsumi.html" target="caixa">Katsumi Orochi</a></li>
+                            </ul>
+                    </details>
+                </li>
+                <br>
+                <li>
+                    <details>
+                        <summary>Musculação</summary>
+                            <ul>
+                                <li>
+                                    <details class="container2">
+                                        <summary>Braço</summary>
+                                        <ul>
+                                            <li><a href="musculação/braço/cbumbraco.html" target="caixa">CBum Braço</a></li>
+                                            <li><a href="musculação/braço/cbumbraco2.html" target="caixa">CBum Braço 2</a></li>
+                                            <li><a href="musculação/braço/johannbraco.html" target="caixa">Johann Braço</a></li>
+                                            <li><a href="musculação/braço/cbumarm.html" target="caixa">CBum Arm Training</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details class="container2">
+                                        <summary>Costas</summary>
+                                        <ul>
+                                            <li><a href="musculação/costas/dinovsbum.html" target="caixa">Dino<strong>vs</strong>CBum</a></li>
+                                            <li><a href="musculação/costas/costasjohann.html" target="caixa">Johann Costas</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details class="container2">
+                                        <summary>Omrbo</summary>
+                                        <ul>
+                                            <li><a href="musculação/ombro/ombrocbum.html" target="caixa">CBum Ombro</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details class="container2">
+                                        <summary>Peito</summary>
+                                        <ul>
+                                            <li><a href="musculação/peito/peito040123.html" target="caixa">Peito 04/01 Performa Jonatan</a></li>
+                                            <li><a href="musculação/peito/cbumpeito.html" target="caixa">Peito CBum</a></li>
+                                            <li><a href="musculação/peito/cbumpeito2.html" target="caixa">Peito CBum 2</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details class="container2">
+                                        <summary>Perna</summary>
+                                        <ul>
+                                            <li><a href="musculação/perna/perna040123.html" target="caixa">Perna 04/01 Performa Jonatan</a></li>
+                                            <li><a href="musculação/perna/pernacbum.html" target="caixa">CBum Perna</a></li>
+                                            <li><a href="musculação/perna/pernastronda.html" target="caixa">Leo Stronda Perna</a></li>
+                                            <li><a href="musculação/perna/tomplatz.html" target="caixa">Tom Platz Legday</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                    </details>
+                </li>
+                <br>
+                <li>
+                    <details>
+                        <summary>Fichas</summary>
+                        <ul>
+                            <li><a href="fichas/fichacboxe.html" target="caixa">Hipertrofia + Boxe</a></li>
+                            <li><a href="fichas/fichagpt.html" target="caixa">Hipertrofia </a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+
+        <div class="iframetela">
+            <iframe id="tela" src="" name="caixa" frameborder="0"></iframe>
+        </div>
+          
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+String para arredondar números:
+- var.toFixed(2).replace('.', ',')
+
+
+String para tranformar em moedas:
+- var.toLocaleString('pt-BR', {style: 'currency', currency 'abreviação da moeda' })
+
+
+Aritméticos:
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1 (o resultado é o resto da divisão dos números)
+5 ** 2 = 25 (potência)
+
+
+Ordem de precedência:
+| ()
+| **
+| *  /  %
+| +  -
+V quem aparecer primeiro
+
+
+Simplificando:
+var n = 3
+n = n + 4   (n += 4)
+n = n - 5   (n -= 5)
+n = n * 4   (n *= 4)
+n = n / 2   (n /= 2)
+n = n ** 2  (n **= 2)
+n = n % 5   (n %= 5)
+
+Relacionais:
+5 > 2 => true
+7 < 4 => false
+8 >= 8 =>  true
+9 <= 7 =>  false
+5 == 5 => true
+4 != 4 => false
+
+Identidade:
+5 == 5 => true
+5 == '5' =>  true
+5 === '5' =>  false
+5 === 5 => true
+
+Lógicos:
+! =>  negação
+&& => conjunção (e)
+|| => disjunção (ou)
+
+Conjunção:
+true && true => true
+true && false => false
+false && true => false
+false && false => false
+
+Disjunção:
+true || true => true
+true || false => true
+false || true => true
+false || false => false
+
+Ordem de precedência:
+| ()
+| **
+| *  /  %
+| +  -
+| quem aparecer primeiro
+| !
+| &&
+V ||
+
+Ternário:
+teste ? true : false 
+? if (se)
+: else (então)

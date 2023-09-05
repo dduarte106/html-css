@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .overlay-box {
+        width: 300px;
+        height: 210px;
+        border-radius: 15px;
+        background-color: rgb(152, 30, 30);
+        font-size: 36px;
+        display: none;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+
+
+<!-- <script>
+        window.onload = function() {
+  const overlay = document.getElementById('overlay');
+  const overlayBoxA = document.getElementById('overlay-boxA');
+  const overlayBoxB = document.getElementById('overlay-boxB');
+  const overlayBoxC = document.getElementById('overlay-boxC');
+  const overlayBoxD = document.getElementById('overlay-boxD');
+
+  // Função para exibir o overlay
+  function showOverlay() {
+    overlay.style.display = 'flex';
+  }
+
+  // Função para mostrar somente a div C
+  function showBoxC() {
+    overlayBoxA.style.display = 'none';
+    overlayBoxB.style.display = 'none';
+    overlayBoxC.style.display = 'block';
+    overlayBoxD.style.display = 'none';
+  }
+
+  // Função para mostrar somente a div A
+  function showBoxA() {
+    overlayBoxA.style.display = 'block';
+    overlayBoxB.style.display = 'none';
+    overlayBoxC.style.display = 'none';
+    overlayBoxD.style.display = 'none';
+  }
+
+  // Função para mostrar somente a div D
+  function showBoxD() {
+    overlayBoxA.style.display = 'none';
+    overlayBoxB.style.display = 'none';
+    overlayBoxC.style.display = 'none';
+    overlayBoxD.style.display = 'block';
+  }
+
+  // Função para mostrar somente a div B
+  function showBoxB() {
+    overlayBoxA.style.display = 'none';
+    overlayBoxB.style.display = 'block';
+    overlayBoxC.style.display = 'none';
+    overlayBoxD.style.display = 'none';
+  }
+
+  // Adicionar evento de clique à div #box01
+  const box01 = document.getElementById('box01');
+  box01.addEventListener('click', function() {
+    showOverlay();
+    showBoxC();
+  });
+
+  // Adicionar evento de clique à div #box04
+  const box04 = document.getElementById('box04');
+  box04.addEventListener('click', function() {
+    showOverlay();
+    showBoxA();
+  });
+
+  // Adicionar evento de clique à div #box02
+  const box02 = document.getElementById('box02');
+  box02.addEventListener('click', function() {
+    showOverlay();
+    showBoxD();
+  });
+
+  // Adicionar evento de clique à div #box06
+  const box06 = document.getElementById('box06');
+  box06.addEventListener('click', function() {
+    showOverlay();
+    showBoxB();
+  });
+
+  // Adicionar evento de clique à div overlay para fechar
+  overlay.addEventListener('click', function(event) {
+    if (event.target === overlay) {
+      overlay.style.display = 'none';
+    }
+  });
+};
+</script> -->
+
+<script>
+    window.onload = function() {
+const overlay = document.getElementById('overlay');
+const overlayBoxes = document.querySelectorAll('.overlay-box');
+
+function showOverlay() {
+overlay.style.display = 'flex';
+}
+
+function hideOverlay() {
+overlay.style.display = 'none';
+}
+
+function showBox(box) {
+overlayBoxes.forEach(function(overlayBox) {
+  overlayBox.style.display = overlayBox.id === box ? 'block' : 'none';
+});
+}
+
+function handleBoxClick(box, targetBox) {
+box.addEventListener('click', function() {
+  showOverlay();
+  showBox(targetBox);
+});
+}
+
+const box01 = document.getElementById('box01');
+handleBoxClick(box01, 'overlay-boxC');
+
+const box04 = document.getElementById('box04');
+handleBoxClick(box04, 'overlay-boxA');
+
+const box02 = document.getElementById('box02');
+handleBoxClick(box02, 'overlay-boxD');
+
+const box06 = document.getElementById('box06');
+handleBoxClick(box06, 'overlay-boxB');
+
+overlay.addEventListener('click', function(event) {
+if (event.target === overlay) {
+  hideOverlay();
+}
+});
+};
+</script>
+
+
+
+
+<div class="container">
+    <div class="box" id="box01">
+        <a href="#">Link 1</a>
+    </div>
+    <div class="box" id="box02">
+        <a href="#">Link 2</a>
+    </div>
+    <div class="box" id="box03">
+        <a href="#">Link 3</a>
+    </div>
+    <div class="box" id="box04">
+        <a href="#">Link 4</a>
+    </div>
+    <div class="box" id="box05">
+        <a href="#">Link 5</a>
+    </div>
+    <div class="box" id="box06">
+        <a href="#">Link 6</a>
+    </div>
+    <div class="box" id="box07">
+        <a href="#">Link 7</a>
+    </div>
+    <div class="box" id="box08">
+        <a href="#">Link 8</a>
+    </div>
+    <div class="box" id="box09">
+        <a href="#">Link 9</a>
+    </div>
+    <div class="box" id="box10">
+        <a href="#">Link 10</a>
+    </div>
+    <div class="box" id="box11">
+        <a href="#">Link 11</a>
+    </div>
+    <div class="box" id="box12">
+        <a href="#">Link 12</a>
+    </div>
+</div>
+      
+      <div id="overlay">
+        <div class="overlay-box" id="overlay-boxA">A</div>
+        <div class="overlay-box" id="overlay-boxB">B</div>
+        <div class="overlay-box" id="overlay-boxC">C</div>
+        <div class="overlay-box" id="overlay-boxD">D</div>
+      </div>
+</body>
+
+</html>

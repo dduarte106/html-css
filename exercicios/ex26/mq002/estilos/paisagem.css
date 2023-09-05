@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*Config deitado*/
+
+body {
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+    background-color: rgb(35, 62, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}

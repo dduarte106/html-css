@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table {
+            width: 600px;
+            height: 600px;
+            border-collapse: collapse;
+        }
+        
+        td {
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        td.destaque {
+            text-align: right;
+            vertical-align: middle;
+            background-color: blue;
+            background-image: url(jack.jfif);
+            background-repeat: no-repeat;
+            background-size: 191%;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <tr class="destaque">
+            <td>1
+            <td>2
+            <td>3
+        
+        <tr>
+            <td>1
+            <td>3
+            <td>2
+        
+        <tr>
+            <td class="destaque">jack hanma</td>
+            <td>1
+            <td>3
+    </table>
+</body>
+</html>
