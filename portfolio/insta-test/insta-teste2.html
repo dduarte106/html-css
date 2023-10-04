@@ -4,142 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando</title>
-    <style>
-        /* Estilos para centralizar a div no meio da tela */
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Isso garante que a div ocupe toda a altura da tela */
-        }
-
-        /* Estilos para o carrossel e os pontos */
-        .carousel {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .carousel img {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .dots {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background-color: #ccc;
-            border-radius: 50%;
-            cursor: pointer;
-            margin: 0 5px;
-        }
-
-        .dot.active {
-            background-color: #333;
-        }
-
-        /* Áreas clicáveis para avançar e voltar */
-        .click-area {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 50%;
-            cursor: pointer;
-        }
-
-        .click-area.left {
-            left: 0;
-        }
-
-        .click-area.right {
-            right: 0;
-        }
-    </style>
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
     <body>
-    <!-- Container centralizado -->
-    <div class="container">
-        <!-- Div com carrossel e pontos -->
-        <div>
-            <div class="carousel">
-                <img src="manoel-gomes-1.jpg" alt="Imagem 1">
-                <img src="manoel-gomes-turne-estados-unidos.jpg" alt="Imagem 2">
-                <img src="manoel_gomes.jpg" alt="Imagem 3">
-                <!-- Adicione mais imagens aqui, se desejar -->
-
-                <!-- Áreas clicáveis para avançar e voltar -->
-                <div class="click-area right" onclick="nextImage()"></div>
-                <div class="click-area left" onclick="prevImage()"></div>
+        <div class="mega-container">
+            
+            <div class="container">
+                <!-- Div com carrossel e pontos -->
+                <div>
+                    <div class="carousel">
+                        <img src="manoel-gomes-1.jpg" alt="Imagem 1">
+                        <img src="manoel-gomes-turne-estados-unidos.jpg" alt="Imagem 2">
+                        <img src="manoel_gomes.jpg" alt="Imagem 3">
+                        <!-- Adicione mais imagens aqui, se desejar -->
+                        <!-- Áreas clicáveis para avançar e voltar -->
+                        <div class="click-area right" onclick="nextImage()"></div>
+                        <div class="click-area left" onclick="prevImage()"></div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <!-- Adicione mais pontos aqui, se desejar -->
+                    </div>
+                </div>
             </div>
-
-            <div class="dots">
-                <span class="dot" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
-                <!-- Adicione mais pontos aqui, se desejar -->
-             </div>
-
+            <script>
+                const carousel = document.querySelector('.carousel');
+                const images = document.querySelectorAll('.carousel img');
+                const dots = document.querySelectorAll('.dot');
+                let currentIndex = 0;
+                function showImage(index) {
+                    images.forEach((img, i) => {
+                        img.style.transform = `translateX(${100 * (i - index)}%)`;
+                    });
+                    currentIndex = index;
+                    // Atualize a classe "active" do ponto atual.
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentIndex);
+                    });
+                }
+                function nextImage() {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showImage(currentIndex);
+                }
+            
+                function prevImage() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                }
+                carousel.addEventListener('click', (event) => {
+                    // Verifique em qual metade da imagem foi clicado
+                    const clickX = event.clientX - carousel.getBoundingClientRect().left;
+                    if (clickX < carousel.offsetWidth / 2) {
+                        prevImage(); // Clique na metade esquerda da imagem para voltar
+                    } else {
+                        nextImage(); // Clique na metade direita da imagem para avançar
+                    }
+                });
+                // Adicione um evento de clique às bolinhas
+                dots.forEach((dot, i) => {
+                    dot.addEventListener('click', () => {
+                        showImage(i); // Chame showImage() com o índice da bolinha clicada
+                    });
+                });
+                // Mostre a primeira imagem no início.
+                showImage(currentIndex);
+            </script>
+            <div class="container_2">
+                <!-- Div com o segundo carrossel e pontos -->
+                <div>
+                    <div class="carousel_2">
+                        <img src="Baki-Hanma-cover.jpg" alt="Imagem 1">
+                        <img src="baki.jpg" alt="Imagem 2">
+                        <img src="Baki-Hanma-Season-2.jpg" alt="Imagem 3">
+                        <!-- Adicione mais imagens aqui, se desejar -->
+                        <!-- Áreas clicáveis para avançar e voltar -->
+                        <div class="click-area_2 right" onclick="nextImage_2()"></div>
+                        <div class="click-area_2 left" onclick="prevImage_2()"></div>
+                    </div>
+                    <div class="dots_2">
+                        <span class="dot_2" data-index="0"></span>
+                        <span class="dot_2" data-index="1"></span>
+                        <span class="dot_2" data-index="2"></span>
+                        <!-- Adicione mais pontos aqui, se desejar -->
+                    </div>
+                </div>
+            <script>
+                const carousel_2 = document.querySelector('.carousel_2');
+                const images_2 = document.querySelectorAll('.carousel_2 img');
+                const dots_2 = document.querySelectorAll('.dot_2');
+                let currentIndex_2 = 0;
+                function showImage_2(index_2) {
+                    images_2.forEach((img_2, i_2) => {
+                        img_2.style.transform = `translateX(${100 * (i_2 - index_2)}%)`;
+                    });
+                    currentIndex_2 = index_2;
+                    dots_2.forEach((dot_2, i_2) => {
+                        dot_2.classList.toggle('active', i_2 === currentIndex_2);
+                    });
+                }
+                function nextImage_2() {
+                    currentIndex_2 = (currentIndex_2 - 1 + images_2.length) % images_2.length;
+                    showImage_2(currentIndex_2);
+                }
+            
+                function prevImage_2() {
+                    currentIndex_2 = (currentIndex_2 + 1) % images_2.length;
+                    showImage_2(currentIndex_2);
+                }
+                carousel_2.addEventListener('click', (event) => {
+                    const clickX_2 = event.clientX - carousel_2.getBoundingClientRect().left;
+                    if (clickX_2 < carousel_2.offsetWidth / 2) {
+                        prevImage_2();
+                    } else {
+                        nextImage_2();
+                    }
+                });
+                dots_2.forEach((dot_2, i_2) => {
+                    dot_2.addEventListener('click', () => {
+                        showImage_2(i_2);
+                    });
+                });
+                showImage_2(currentIndex_2);
+            </script>
         </div>
-    </div>
-
-    <script>
-        const carousel = document.querySelector('.carousel');
-        const images = document.querySelectorAll('.carousel img');
-        const dots = document.querySelectorAll('.dot');
-        let currentIndex = 0;
-
-        function showImage(index) {
-            images.forEach((img, i) => {
-                img.style.transform = `translateX(${100 * (i - index)}%)`;
-            });
-
-            currentIndex = index;
-
-            // Atualize a classe "active" do ponto atual.
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentIndex);
-            });
-        }
-
-        function nextImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
-        }
-
-        function prevImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        }
-
-        carousel.addEventListener('click', (event) => {
-            // Verifique em qual metade da imagem foi clicado
-            const clickX = event.clientX - carousel.getBoundingClientRect().left;
-            if (clickX < carousel.offsetWidth / 2) {
-                prevImage(); // Clique na metade esquerda da imagem para voltar
-            } else {
-                nextImage(); // Clique na metade direita da imagem para avançar
-            }
-        });
-
-        // Adicione um evento de clique às bolinhas
-        dots.forEach((dot, i) => {
-            dot.addEventListener('click', () => {
-                showImage(i); // Chame showImage() com o índice da bolinha clicada
-            });
-        });
-
-        // Mostre a primeira imagem no início.
-        showImage(currentIndex);
-    </script>
 
     </body>
 </html>
