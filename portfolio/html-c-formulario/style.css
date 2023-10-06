@@ -30,12 +30,11 @@ body {
 div.formulario {
     background-color: aquamarine;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 10%;
     overflow: hidden;
     width: 52pc;
-    height: 40pc;
-
+    height: 38pc;
 }
 
 section{
