@@ -9,4 +9,4 @@
 <br>
 <a href="https://dduarte106.github.io/html-css/desafios/tela-de-login/index.html" target="_blank">Tela de login</a>
 <br>
-<a href="https://dduarte106.github.io/html-css/portifolio/anuncio-venda/index.html" target="_blank">Anuncio de produto</a>
+<a href="https://dduarte106.github.io/html-css/portfolio/anuncio-venda/index.html" target="_blank">Anuncio de produto</a>
