@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <!-- estilos -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-query.css">
+  <!-- <link rel="stylesheet" href="media-query.css"> -->
 
   <!-- icon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -16,6 +16,21 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .circle.selected {
+      background-color: #e74c3c;
+    }
+
   </style>
 </head>
 <body>
@@ -31,14 +46,26 @@
         to help us improve our offering!
       </p>
       <section class="rating-line">
-        <span id="1" class="rating">1</span>
+
+
+        <!-- <span id="1" class="rating">1</span>
         <span id="2" class="rating">2</span>
         <span id="3" class="rating">3</span>
         <span id="4" class="rating">4</span>
         <span id="5" class="rating">5</span>
-      </section>
+      
 
+       -->
+      
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div class="circle" id="circle4"></div>
+        <div class="circle" id="circle5"></div>
+      </section>
       <a href="" target="_blank" class="botao"><span>Submit</span></a>
+      
+      <script src="script.js"></script>
       <!-- Rating state end -->
       <!-- Thank you state start -->
 
