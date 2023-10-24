@@ -28,6 +28,10 @@ main {
     width: 100vw;
 }
 
+section.principal {
+    background-color: chartreuse;
+}
+
 div.classif {
     position: absolute;
     top: 50%;
@@ -35,10 +39,10 @@ div.classif {
     overflow: hidden;
 
     background-color: white;
+    padding: 3%;
     width: 500px;
-    height: 500px;
-    border-radius: 10px;
-    /* box-shadow: 0px 0px 10px black; */
+    height: 450px;
+    border-radius: 25px;
 
     transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
@@ -59,11 +63,13 @@ section#login > div#formulario {
 }
 
 div.classif > h1 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Overpass', sans-serif;
     font-size: 2em;
     font-weight: 700;
-    margin: 10px 0px;
     color: hsl(212, 21%, 14%);
+
+    padding-top: 25px;
+    margin: 10px 0px;
 }
 
 /* div#formulario > h3 {
@@ -74,19 +80,17 @@ div.classif > h1 {
 } */
 
 div.classif > p {
-    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
     color: hsl(217, 12%, 63%);
-    /* font-family: 'Montserrat', sans-serif;
-    line-height: 150%;
-    font-size: 0.87em;
-    color: hsl(228, 12%, 48%);
-    margin-top: 17px;
-    margin-bottom: 30px; */
+    line-height: 18pt;
 }
 
 div.classif > section.rating-line {
     display: flex;
-    justify-content: space-evenly;
+    gap: 27px;
+    margin: 25px 1px;
 }
 
 section.rating-line > span.rating {
@@ -96,28 +100,45 @@ section.rating-line > span.rating {
     background-color: aqua;
 }
 
-div.classif > a.botao {
+section.rating-line > .circle {
     display: flex;
     justify-content: center;
-    /* font-size: 1em;
-    font-weight: 700; */
-    width: 60%;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    background-color: #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+section.rating-line > .circle.selected {
+    background-color: #e74c3c;
+  }
+
+div.classif > input {
+    display: flex;
+    justify-content: center;
+    
+    width: 95%;
     height: 40px;
-    margin-top: 5px;
-    padding-top: 9px;
+    margin-top: 10%;
+
     background-color: hsl(25, 97%, 53%);
     color: white;
     border-radius: 25px;
-    text-decoration: none;
+    border: none;
+
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-div.classif > a.botao:hover {
+div.classif > input:hover {
     background-color: hsl(158, 36%, 37%);
 }
 
-div.classif > a.botao > span {
-    font-size: 0.9em;
-}
 
 
 

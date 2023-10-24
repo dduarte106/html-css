@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="media-query.css"> -->
 
+  <!-- font family-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;700&display=swap" rel="stylesheet">
+
   <!-- icon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -16,67 +21,37 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-
-    .circle {
-      width: 50px;
-      height: 50px;
-      background-color: #3498db;
-      border-radius: 50%;
-      display: inline-block;
-      margin: 10px;
-      cursor: pointer;
-    }
-
-    .circle.selected {
-      background-color: #e74c3c;
-    }
-
   </style>
 </head>
 <body>
 
   <main>
-    <div class="classif">
-      <!-- Rating state start -->
-      <img src="images/icon-star.svg" alt="Estrela Icone">
-
-      <h1>How did we do?</h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!
-      </p>
-      <section class="rating-line">
-
-
-        <!-- <span id="1" class="rating">1</span>
-        <span id="2" class="rating">2</span>
-        <span id="3" class="rating">3</span>
-        <span id="4" class="rating">4</span>
-        <span id="5" class="rating">5</span>
+      <div class="classif">
+        <!-- Rating state start -->
+        <img src="images/icon-star.svg" alt="Estrela Icone">
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        <section class="rating-line">
       
-
-       -->
-      
-        <div class="circle" id="circle1"></div>
-        <div class="circle" id="circle2"></div>
-        <div class="circle" id="circle3"></div>
-        <div class="circle" id="circle4"></div>
-        <div class="circle" id="circle5"></div>
-      </section>
-      <a href="" target="_blank" class="botao"><span>Submit</span></a>
-      
-      <script src="script.js"></script>
-      <!-- Rating state end -->
-      <!-- Thank you state start -->
-
-
-      <!-- You selected /* Add rating here */ out of 5
-      Thank you!
-      We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch! -->
-
-
-    </div>
+          <div class="circle" id="circle1">1</div>
+          <div class="circle" id="circle2">2</div>
+          <div class="circle" id="circle3">3</div>
+          <div class="circle" id="circle4">4</div>
+          <div class="circle" id="circle5">5</div>
+        </section>
+        <!-- <a href="" target="_blank" class="botao"><span>SUBMIT</span></a> -->
+        <input type="submit" value="SUBMIT">
+        <script src="script.js"></script>
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+        <!-- You selected /* Add rating here */ out of 5
+        Thank you!
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch! -->
+      </div>
   </main>
 
   <!-- Thank you state end -->
