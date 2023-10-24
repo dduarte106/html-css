@@ -84,6 +84,15 @@ div.preco {
     display: flex;
     position: relative;
     gap: 5%;
+    margin-bottom: 7%;
+}
+
+.preco > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: smaller;
+    text-decoration: line-through;
+    align-self: center;
+    color: hsl(228, 12%, 48%);
 }
 
 .preco > h1 {
@@ -92,12 +101,6 @@ div.preco {
     color: hsl(158, 36%, 37%);
 }
 
-.preco > h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: smaller;
-    align-self: center;
-    color: hsl(228, 12%, 48%);
-}
 
 form > a.botao {
     display: flex;
@@ -105,9 +108,9 @@ form > a.botao {
     font-size: 1em;
     font-weight: 700;
     width: 100%;
-    height: 40px;
+    height: 50px;
     margin-top: 5px;
-    padding-top: 9px;
+    padding-top: 15px;
     background-color: hsl(158, 36%, 37%);
     color: white;
     border-radius: 5px;
