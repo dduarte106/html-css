@@ -26,6 +26,8 @@ main {
     position: relative;
     height: 100vh;
     width: 100vw;
+
+    background-color: black;
 }
 
 section.principal {
@@ -38,9 +40,9 @@ div.classif {
     left: 50%;
     overflow: hidden;
 
-    background-color: white;
+    background-image: linear-gradient(to bottom right,hsl(213, 19%, 18%), hsl(216, 12%, 8%));
     padding: 3%;
-    width: 500px;
+    width: 400px;
     height: 450px;
     border-radius: 25px;
 
@@ -50,9 +52,9 @@ div.classif {
 }
 
 div.classif > img {
-    background-color: hsl(217, 12%, 63%);
-    width: 40px;
-    height: 40px;
+    background-color: hsl(213, 19%, 18%);
+    width: 45px;
+    height: 45px;
     padding: 12px;
     border-radius: 50%;
 }
@@ -66,7 +68,7 @@ div.classif > h1 {
     font-family: 'Overpass', sans-serif;
     font-size: 2em;
     font-weight: 700;
-    color: hsl(212, 21%, 14%);
+    color: white;
 
     padding-top: 25px;
     margin: 10px 0px;
@@ -108,14 +110,18 @@ section.rating-line > .circle {
     width: 55px;
     height: 55px;
 
-    background-color: #3498db;
+    background-color: hsl(213, 19%, 18%);
     border-radius: 50%;
     cursor: pointer;
-  }
+}
+
+section.rating-line > .circle:hover {
+    background-color: hsl(217, 12%, 63%);
+}
 
 section.rating-line > .circle.selected {
-    background-color: #e74c3c;
-  }
+    background-color: hsl(25, 97%, 53%);
+}
 
 div.classif > input {
     display: flex;
@@ -136,7 +142,9 @@ div.classif > input {
 }
 
 div.classif > input:hover {
-    background-color: hsl(158, 36%, 37%);
+    background-color: whitesmoke;
+    color: hsl(25, 97%, 53%);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 
