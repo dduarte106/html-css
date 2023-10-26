@@ -20,6 +20,11 @@ Grandes telas: acima de 1200px
         height: 425px;
     }
 
+    div.thx {
+        width: 53vw;
+        height: 425px;
+    }
+
 }
 
 @media screen and (min-width:992px) {
@@ -34,5 +39,9 @@ Grandes telas: acima de 1200px
 
     section.rating-line {
         padding-left: 8%;
+    }
+
+    div.thx {
+        width: 600px;
     }
 }
