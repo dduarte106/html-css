@@ -1,0 +1,30 @@
+/* @charset "UTF-8";
+
+div.form-total {
+
+    background-color: aqua;
+    width: 100%;
+    height: 50%;
+
+    padding: 0px 20pc;
+}
+
+div.infos-form {
+    width: 40vh;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+div.infos-opn {
+    width: 40vh;
+    height: 100%;
+    background-color: yellow;
+}
+
+.form-control {
+    width: 90%;
+}
+
+.form-control-txt {
+    width: 90%;
+} */
