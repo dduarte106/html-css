@@ -65,4 +65,38 @@ header {
 }
 
 /* ------- TREINOS -------*/
+div.treinos {
+    text-indent: 20px;
+}
 
+div.treinos > details > summary {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* -------  IFRAME -------*/
+div#botao {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    left: 10%;
+
+    width: 80vw;
+    height: 50px;
+
+    border-radius: 15px;
+    background-color: yellow;
+}
+
+div#botao > a {
+    text-align: center;
+    padding: 10px;
+
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
