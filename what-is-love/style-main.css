@@ -30,14 +30,17 @@ body, html {
     --rosa2: #FFAFBE;
 }
 
+/* BARRA DE NEVAGAÇÃO / NAVBAR*/
+
 nav {
     height: 80px;
-    background-color: red;
+    /* background-color: red; */
 }
 
  /* Estilo para o traço sob os itens da navegação */
  .navbar-nav .nav-link {
     position: relative;
+    color: black;
 }
 
   .navbar-nav .nav-link::after {
@@ -56,9 +59,15 @@ nav {
     width: 100%; /* Faz o traço se estender completamente */
 }
 
+/* .nav-link {
+    width: 50%;
+} */
+
+/* MAIN */
+
 main {
     margin-top: 80px;
-    background-color: var(--roxo);
+    background-color: white;
     box-sizing: border-box;
 }
 
@@ -66,6 +75,7 @@ main {
 
 div#intro {
     border-bottom: black 3px solid;
+    background-color: rgba(128, 128, 128, 0.712);
 }
 
 section#txt {
@@ -90,7 +100,7 @@ section#txt > h3 {
 /* DIV BOX01 */
 
 div#box01 {
-    background-color: aqua;
+    /* background-color: aqua; */
     padding-bottom: 80px;
 }
 
@@ -107,12 +117,12 @@ div#box-info > h3.ttlinfo {
 /* DIV BOX-LIVRO */
 
 div#box-livro {
-    background-color: chocolate;
+    /* background-color: chocolate; */
     padding-bottom: 80px;
 }
 
 div#box-livro > img {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     /* background-color: #63B0AB; */
 }
 
@@ -143,13 +153,12 @@ div.circle {
 /* FOOTER DA PÁGINA*/
 
 footer {
-    background-color: yellow;
-    height: 0;
-    background-color: #f8f9fa;
+    height: auto;
+    background-color: var(--roxo);
 }
 
 footer > div.links {
-    background-color: turquoise;
+    /* background-color: turquoise; */
 }
 
 footer > div.imgf {
@@ -163,5 +172,5 @@ footer > div.imgf {
 
 div.imgf > img {
     text-align: center;
-    height: 100px;
+    height: 80px;
 }
