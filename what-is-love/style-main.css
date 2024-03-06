@@ -207,7 +207,7 @@ div.circle-teste {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}  
 
 span.circle {
     background-color: #00000000;
@@ -278,4 +278,62 @@ footer > div.imgf {
 div.imgf > img {
     text-align: center;
     height: 80px;
+}
+
+
+/* MEDIA QUERY ADAPTAÇÕES*/ 
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+
+    
+}
+
+@media screen and (max-width: 767px) {
+    #info01 {
+        width: 80%;
+        height: 60vh;
+    }
+
+    #info02 {
+        width: 80%;
+        height: 60vh;
+    }
+
+    #info03 {
+        width: 80%;
+        height: 60vh;
+    }   
+
+    h3.ttlinfo {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    #inside-box-info {
+        font-size: 10px;
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #info01 {
+        width: 80%;
+        height: 90vh;
+    }
+
+    #info02 {
+        width: 80%;
+        height: 90vh;
+    }
+
+    #info03 {
+        width: 80%;
+        height: 90vh;
+    }   
+
+    h3.ttlinfo {
+        font-size: 1.2rem;
+    }
 }
