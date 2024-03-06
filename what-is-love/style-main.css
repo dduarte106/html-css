@@ -12,9 +12,7 @@
 
 body, html {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
 	font-family: 'Poppins', sans-serif;
 
     position: relative;
@@ -28,13 +26,16 @@ body, html {
 
     --roxo2: #D26EDB;
     --rosa2: #FFAFBE;
+
+    --amarelo: #fbea62;
+    --amarelo2: #F5E557;
+    --amarelo3: #fed453;
 }
 
 /* BARRA DE NEVAGAÇÃO / NAVBAR*/
 
 nav {
     height: 80px;
-    /* background-color: red; */
 }
 
  /* Estilo para o traço sob os itens da navegação */
@@ -59,9 +60,6 @@ nav {
     width: 100%; /* Faz o traço se estender completamente */
 }
 
-/* .nav-link {
-    width: 50%;
-} */
 
 /* MAIN */
 
@@ -71,11 +69,12 @@ main {
     box-sizing: border-box;
 }
 
-/*DIV INTRODUÇÃO*/
+/* DIV INTRODUÇÃO */
 
 div#intro {
     border-bottom: black 3px solid;
-    background-color: rgba(128, 128, 128, 0.712);
+    background-color: #ffee58ad;
+    height: auto;
 }
 
 section#txt {
@@ -83,12 +82,16 @@ section#txt {
     padding: 30px;
 }
 
+p.love {
+    font-weight: 600;
+    font-size: 205px !important;
+    line-height: 85%;
+}
 section#txt > h1{
     font-size: 58px;
     line-height: 60px;
     font-weight: 700;
 }
-
 
 section#txt > h3 {
     font-size: 40px;
@@ -97,33 +100,103 @@ section#txt > h3 {
     text-indent: 20px;
 }
 
-/* DIV BOX01 */
+/* DIVS DE ESPAÇAMENTO*/
 
-div#box01 {
-    /* background-color: aqua; */
-    padding-bottom: 80px;
+div.espaco {
+    width: 100%;
+    height: 10vh;
+    /* background-color: firebrick; */
 }
 
-/* DIV BOX-INFO */
+
+/* DIV BOX01 
+
+div#box01 {
+    padding-bottom: 80px;
+} */
+
+/*DIV BOX-INFO */
 
 div#box-info {
     padding-bottom: 80px;
+    padding-top: 80px;
 }
 
-div#box-info > h3.ttlinfo {
+.infotxt {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease; /* Aqui você pode aumentar o valor para tornar a transição mais lenta */
+}
+
+#info01 {
+    /* background-color: var(--amarelo); */
+    background-color: #fbea629e;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#info02 {
+    /* background-color: var(--amarelo2); */
+    background-color: #ffee58ad;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#info03 {
+    /* background-color: var(--amarelo3); */
+    background-color: #ffeb3ba6;
+    padding: 20px;
+    border-radius: 25px;  
+}
+
+h3.ttlinfo {
     font-size: 2rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.712);
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
 }
 
-/* DIV BOX-LIVRO */
+/* PÁGINA DE DADOS E ESTATÍSTICAS*/
+
+/* DIV ESTATISTICAS*/
+
+#cont-numeros {
+    background-color: green;
+}
+
+#numeros {
+    background-color: aquamarine;
+}
+
+#numeros > .stats {    
+    width: 30vw;
+    height: 15vh;
+    
+    background-color: yellow;
+}
+
+#numeros2 {
+    background-color: tomato;
+}
+
+#numeros2 > .stats {
+    width: 30vw;
+    height: 15vh;
+
+    background-color: royalblue;
+}
+
+
+
+
+/* DIV BOX-LIVRO
 
 div#box-livro {
-    /* background-color: chocolate; */
     padding-bottom: 80px;
 }
 
 div#box-livro > img {
-    /* background-color: chartreuse; */
-    /* background-color: #63B0AB; */
 }
 
 div#box-livro > div.livrobkg {
@@ -135,9 +208,10 @@ div#box-livro > div.livrobkg {
 
 div.livrobkg > img {
     height: 250px;
-}
+} */
 
-/* DIV BOX02*/
+
+/* DIV BOX02
 div.circle {
     width: 60px;
     height: 60px;
@@ -148,7 +222,8 @@ div.circle {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-}
+}*/
+
 
 /* FOOTER DA PÁGINA*/
 
@@ -157,13 +232,10 @@ footer {
     background-color: var(--roxo);
 }
 
-footer > div.links {
-    /* background-color: turquoise; */
-}
-
 footer > div.imgf {
     background-color: brown;
     margin-top: 10px;
+    margin: 10px;
 
     height: 150px;
     width: 150px;
