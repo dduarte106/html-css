@@ -162,31 +162,64 @@ h3.ttlinfo {
 /* DIV ESTATISTICAS*/
 
 #cont-numeros {
-    background-color: green;
+    background-color: white;
 }
 
 #numeros {
-    background-color: aquamarine;
+    background-color: white;
 }
 
 #numeros > .stats {    
     width: 30vw;
-    height: 15vh;
+    height: 35vh;
     
-    background-color: yellow;
+    background-color: white;
+
+    border: 3px solid #fbea62;
+    border-radius: 2rem;
 }
 
 #numeros2 {
-    background-color: tomato;
+    background-color: white;
 }
 
 #numeros2 > .stats {
     width: 30vw;
-    height: 15vh;
+    height: 35vh;
 
-    background-color: royalblue;
+    background-color: white;
+
+    border: 3px solid #fbea62;
+    border-radius: 2rem;
 }
 
+#numeros2 > .stats-solo {
+    width: 64vw;
+    height: 35vh;
+
+    background-color: white;
+
+    border: 3px solid #fbea62;
+    border-radius: 2rem;
+}
+
+div.circle-teste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.circle {
+    background-color: #00000000;
+    width: 89px;
+    height: 89px;
+    border: 4px solid #fbea62;
+    border-radius: 50%;
+}
+
+span.estilo-info {
+    border-bottom: 3px solid #fbea62;
+}
 
 
 
