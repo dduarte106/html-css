@@ -133,6 +133,13 @@ div#box-info {
     background-color: #fbea629e;
     padding: 20px;
     border-radius: 25px;
+
+    height: 82vh;
+}
+
+#info01 > p {
+    padding-top: 40%;
+
 }
 
 #info02 {
@@ -140,6 +147,13 @@ div#box-info {
     background-color: #ffee58ad;
     padding: 20px;
     border-radius: 25px;
+
+    height: 82vh;
+}
+
+#info02 > p {
+    padding-top: 30%;
+
 }
 
 #info03 {
@@ -147,6 +161,8 @@ div#box-info {
     background-color: #ffeb3ba6;
     padding: 20px;
     border-radius: 25px;  
+
+    height: 82vh;
 }
 
 h3.ttlinfo {
@@ -289,6 +305,14 @@ div.imgf > img {
 }
 
 @media screen and (max-width: 767px) {
+
+    /* DIV INTRO */
+
+    div#intro {
+        height: 90vh;
+    }
+
+    /* DIV BOX-INFO*/
     #info01 {
         width: 80%;
         height: 60vh;
@@ -310,6 +334,8 @@ div.imgf > img {
 }
 
 @media screen and (max-width: 498px) {
+
+    /* DIV BOX-INTRO*/
     #inside-box-info {
         font-size: 10px;
 
