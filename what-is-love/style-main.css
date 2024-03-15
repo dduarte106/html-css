@@ -32,9 +32,6 @@ body, html {
     --amarelo3: #fed453;
 }
 
-div.principal {
-    background-color: #ffee58ad;
-}
 
 /* BARRA DE NEVAGAÇÃO / NAVBAR*/
 
@@ -130,24 +127,7 @@ div#box-info {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease; /* Aqui você pode aumentar o valor para tornar a transição mais lenta */
-}
 
-#info01 {
-    /* background-color: var(--amarelo); */
-    background-color: #fbea629e;
-    padding: 20px;
-    border-radius: 25px;
-
-    height: 82vh;
-}
-
-#info01 > p {
-    padding-top: 40%;
-
-}
-
-#info02 {
-    /* background-color: var(--amarelo2); */
     background-color: #ffee58ad;
     padding: 20px;
     border-radius: 25px;
@@ -155,19 +135,29 @@ div#box-info {
     height: 82vh;
 }
 
-#info02 > p {
-    padding-top: 30%;
+/* #info01 {
+    background-color: #fbea629e;
+    padding: 20px;
+    border-radius: 25px;
 
+    height: 82vh;
+}
+
+#info02 {
+    background-color: #ffee58ad;
+    padding: 20px;
+    border-radius: 25px;
+
+    height: 82vh;
 }
 
 #info03 {
-    /* background-color: var(--amarelo3); */
     background-color: #ffeb3ba6;
     padding: 20px;
     border-radius: 25px;  
 
     height: 82vh;
-}
+} */
 
 h3.ttlinfo {
     font-size: 2rem;
@@ -321,51 +311,32 @@ summary.ofertas {
     margin-bottom: 20px;
 }
 
-/* DIV BOX-LIVRO
-
-div#box-livro {
-    padding-bottom: 80px;
-}
-
-div#box-livro > img {
-}
-
-div#box-livro > div.livrobkg {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background-color: #63B0AB;
-}
-
-div.livrobkg > img {
-    height: 250px;
-} */
+/* REDES SOCIAIS E AFINS*/
 
 
-/* DIV BOX02
-div.circle {
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-    border: 2px solid var();
+section#network img {
+    position: fixed;
+    right: 10px;
+    bottom: calc(31vh + (60px * (var(--logo-index) - 1))); /* Adiciona espaçamento vertical */
+    z-index: 998;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}*/
+    text-align: center;
+}
+
+
 
 
 /* FOOTER DA PÁGINA*/
 
 footer {
     height: auto;
-    /* background-color: #fdf18d; */
-    background-color: white;
+    background-color: #fdf18d;
 
     /* border: 1px solid black; */
 
-    border-radius: 30px 30px 0 0 ;
+    /* border-radius: 30px 30px 0 0 ; */
 }
 
 footer ul li a {
