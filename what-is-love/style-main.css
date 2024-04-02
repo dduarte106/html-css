@@ -119,8 +119,8 @@ div#box01 {
 /*DIV BOX-INFO */
 
 div#box-info {
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 80px !important;
+    padding-top: 80px !important;
 }
 
 .infotxt {
@@ -128,14 +128,14 @@ div#box-info {
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease; /* Aqui você pode aumentar o valor para tornar a transição mais lenta */
 
-    background-color: #ffee58ad;
+    /* background-color: #ffee58ad;
     padding: 20px;
     border-radius: 25px;
 
-    height: 82vh;
+    height: 82vh; */
 }
 
-/* #info01 {
+#info01 {
     background-color: #fbea629e;
     padding: 20px;
     border-radius: 25px;
@@ -157,7 +157,7 @@ div#box-info {
     border-radius: 25px;  
 
     height: 82vh;
-} */
+}
 
 h3.ttlinfo {
     font-size: 2rem;
@@ -311,32 +311,10 @@ summary.ofertas {
     margin-bottom: 20px;
 }
 
-/* REDES SOCIAIS E AFINS*/
-
-
-section#network img {
-    position: fixed;
-    right: 10px;
-    bottom: calc(31vh + (60px * (var(--logo-index) - 1))); /* Adiciona espaçamento vertical */
-    z-index: 998;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-
-
-
 /* FOOTER DA PÁGINA*/
 
-footer {
+/* footer {
     height: auto;
-    background-color: #fdf18d;
-
-    /* border: 1px solid black; */
-
-    /* border-radius: 30px 30px 0 0 ; */
 }
 
 footer ul li a {
@@ -361,8 +339,78 @@ footer > div.imgf {
 div.imgf > img {
     text-align: center;
     height: 80px;
+} */
+
+footer {
+    width: 100%;
+    background-color: #fdf18d;
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
+    color: black;
 }
 
+footer h5 {
+    font-size: 15px;
+    margin-bottom: 3%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer p {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+footer div.bg-logo {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer img {
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+footer a, footer a:visited {
+    color: black;
+}
+
+footer a:hover, footer a:focus {
+    color: #ff7569;
+}
+
+.txt-footer {
+    border-top: 2px solid black;
+    margin: 5px 50px;
+}
+
+.lgs {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+
+    padding-top: 1%;
+}
+
+.svg-container {
+    display: inline-block;
+}
+
+.svg-container a {
+    display: block;
+    width: 55%;
+    height: 20%;
+    text-decoration: none;
+    color: inherit;
+}
 
 /* MEDIA QUERY ADAPTAÇÕES*/ 
 
