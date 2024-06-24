@@ -1,7 +1,9 @@
 # html-css
  Estudos de HTML e CSS
 
+<!-
 <a href="https://dduarte106.github.io/html-css/portfolio/html-c-formulario/index.html" target="_blank">Site com formulário</a>
+-->
 <br>
 <a href="https://dduarte106.github.io/html-css/portfolio/project-qrcode/index.html" target="_blank">QR CODE</a>
 <br>
