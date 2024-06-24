@@ -1,5 +1,5 @@
 # html-css
- Estudos de HTML e CSS
+ Portfolio 
 
 <a href="https://dduarte106.github.io/html-css/portfolio/project-qrcode/index.html" target="_blank">QR CODE</a>
 <br>
