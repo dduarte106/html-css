@@ -10,8 +10,3 @@
 <a href="https://dduarte106.github.io/html-css/portfolio/classificacao/index.html" target="_blank">Classificação</a>
 <br>
 <a href="https://dduarte106.github.io/html-css/what-is-love/index.html" target="_blank">What is Love</a>
-
-<br>
-<br>
-<a href="https://dduarte106.github.io/html-css/php/index.php" target="_blank">PHP</a>
-<a href="https://dduarte106.github.io/html-css/php/index.html" target="_blank">PHP2</a>
