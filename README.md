@@ -13,5 +13,5 @@
 
 <br>
 <br>
-<a href:="https://dduarte106.github.io/html-css/php/index.php" target="_blank">PHP</a>
-<a href:="https://dduarte106.github.io/html-css/php/index.html" target="_blank">PHP2</a>
+<a href="https://dduarte106.github.io/html-css/php/index.php" target="_blank">PHP</a>
+<a href="https://dduarte106.github.io/html-css/php/index.html" target="_blank">PHP2</a>
